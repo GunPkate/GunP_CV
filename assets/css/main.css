@@ -3492,7 +3492,6 @@ input, select, textarea {
 				#intro .actions {
 					display: none;
 				}
-
 		}
 
 		@media screen and (max-width: 450px) {
@@ -3516,7 +3515,29 @@ input, select, textarea {
 				#intro .actions {
 					display: none;
 				}
+		}
 
+		@media screen and (max-width: 370px) {
+
+			#intro {
+				padding: 2.5rem 1.75rem 1rem 1.75rem ;
+				min-height: 80vh;
+			}
+
+				#intro h1 {
+					font-size: 1.4rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 0.75rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
 		}
 
 /* Header */
