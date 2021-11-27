@@ -3457,7 +3457,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#intro {
-				padding: 4rem 4rem 2rem 4rem ;
+				padding: 3.5rem 4rem 2rem 4rem ;
 				min-height: 90vh;
 			}
 
@@ -3486,6 +3486,30 @@ input, select, textarea {
 
 				#intro p {
 					font-size: 1rem;
+					margin-top: 0rem;
+				}
+
+				#intro .actions {
+					display: none;
+				}
+
+		}
+
+		@media screen and (max-width: 450px) {
+
+			#intro {
+				padding: 2.75rem 2rem 1rem 2rem ;
+				min-height: 80vh;
+			}
+
+				#intro h1 {
+					font-size: 1.75rem;
+					line-height: 1.1;
+					margin-bottom: 1rem;
+				}
+
+				#intro p {
+					font-size: 0.9rem;
 					margin-top: 0rem;
 				}
 
@@ -3738,6 +3762,26 @@ input, select, textarea {
 							color: #18bfef !important;
 						}
 
+						#nav ul.links li.active.aboutme:hover > a {
+							color: #18bfef !important;		
+						}
+
+						/* #nav ul li ul  {
+							display: none;
+							position: absolute;
+							margin: 0;
+							top: 50px;
+							left: 0px;
+							width: 175px;
+							overflow: visible;
+							padding: 0;	
+						}
+						#nav ul li:hover  ul  {
+							display: block;
+							position: absolute;
+							z-index: 5; 
+						} */
+
 		#nav ul.icons {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;
@@ -3766,7 +3810,7 @@ input, select, textarea {
 		margin: 0 auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 1;
 	}
 
 		#main > * {
