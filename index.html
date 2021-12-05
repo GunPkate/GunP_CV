@@ -7,6 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="./assets/js/lang.js"></script>
+	
 	</head>
 	<body class="is-preload">
 
@@ -15,27 +18,40 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Gun Puengkatesoontorn<br />
-						 <P>Current job : Software Engineer Trainee</P></h1>
+						<h1 class="lang" key="h1name">Gun Puengkatesoontorn<br />
+						 <p>Current job: Software Engineer Trainee</p></h1>
+						 <p class="lang" key="h1intro">
 						<br>I have passion for business and coding. I put my work experience and knowledge into action
-						<br>in order to deploy creative strategies and work more efficiently .
-					</p>
+						<br>in order to deploy creative strategies and work more efficiently.
+						</p>
 					</div>
 
 				<!-- Header -->
 					<header id="header">
 						<a href="myprojects.html" class="logo">My Portfolio</a>
-						<br><a href="https://drive.google.com/file/d/1bS5N3bhglwSNymusjNQtoH6LaRjYy21j/view?usp=sharing" class="logo">My Resume</a>
+						<br><a href="https://drive.google.com/file/d/1bS5N3bhglwSNymusjNQtoH6LaRjYy21j/view?usp=sharing" class="logo">Resume PDF(Click)</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">About Me</a></li>
-							<li><a href="mywork.html">My Work (IT)</a></li>
+							<li class="active aboutme"><a href="index.html"><p class="lang" key="about">About Me</p></a>
+								<!-- <ul>
+									<li><a href="#IT">IT</a></li>
+									<li><a href="#Non-IT">Non-IT</a></li>
+								</ul> -->
+							</li>
+
 							<li><a href="myprojects.html">My Projects</a></li>
+							<li><a href="myinterest.html">My Interest</a></li>
 						</ul>
 						<ul class="icons">
+									<li>    <button class="translate" id="en">English</button>    </li>
+									<li>	<button class="translate" id="jp">日本語</button>   </li>
+									<!-- <li class="lang" key="home">Home</li>
+									<li class="lang" key="about">About me</li>
+									<li class="lang" key="contact">contact</li> -->
+							
 									<li><a href="https://www.facebook.com/GunPuengkate/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://github.com/GunPkate" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
@@ -43,11 +59,16 @@
 
 				<!-- Main -->
 					<div id="main">
-
+						
 						<!-- Featured Post -->
 							<article class="posts">
 								<header class="major">
-									<h3>Experience and Skills</h3><br/>
+									<h3><p class="lang" key="h3main">Experience and Skills</p></h3><br/>
+									<div class="sub-aboutme">
+										<ul><a href="#IT">IT</a></ul>
+										<ul><a href="#Non-IT">Non-IT</a></ul>
+										<ul><a href="#Education">Education</a></ul>
+									</div>
 
 									<span class="date"><b>Skills</b></span>
 									<table class="alt">
@@ -61,9 +82,7 @@
 										<tbody>
 											<tr>
 												<td>Financial analysis</td>
-												<td>Python
-													<br>C#
-												</td>
+												<td>Python</td>
 												<td>English</td>
 											</tr>
 											<tr>
@@ -75,7 +94,9 @@
 											</tr>
 											<tr>
 												<td>Stock Market</td>
-												<td>WPF</td>
+												<td>WPF
+													<br>C#
+												</td>
 												<td></td>
 											</tr>
 									</table>
@@ -85,12 +106,12 @@
 								</article>
 
 						<header class="major">
-							<h3>IT Career</h3><br/>
+							<h3 id="IT">IT Career</h3><br/>
 						</header>
 						<section class="posts">
 							<article>
 								<header>
-									<h4>Nov, 2021 – Current Job</h4>
+									<h4>Oct, 2021 – Nov, 2021</h4>
 									<h2>Code-D 789 <br />
 									Software Engineer Trainee</h2>
 								</header>
@@ -101,14 +122,14 @@
 									<br>POSTMAN to evaluate result and debug.
 									<br>• Organize ui/ux with WPF.</p>
 								<ul class="actions special">
-									<li><a href="mywork.html" class="button">For more detail</a></li>
+									<li><a href="myinterest.html" class="button">For more detail</a></li>
 								</ul>
 							</article>
 						</section>
 
 						<!-- None-IT -->
 						<header class="major">
-							<h3>Non-IT Career</h3><br/>
+							<h3 id="Non-IT">Non-IT Career</h3><br/>
 						</header>
 							<section class="posts">
 								<article>
@@ -125,7 +146,7 @@
 										<br>• Suggested and make report of investment plan.
 										<br>• implement accounting and improve analysis system.</p>
 									<ul class="actions special">
-										<li><a href="mywork.html" class="button">For more detail</a></li>
+										<li><a href="myinterest.html" class="button">For more detail</a></li>
 									</ul>
 								</article>
 								<article>
@@ -158,6 +179,23 @@
 										desirable investment portfolio.
 										<br>• Presented to customers to escalate financial literacy
 										</p>
+								</article>
+							</section>
+
+													<!-- Education -->
+						<header class="major">
+							<h3 id="Education">Education</h3><br/>
+						</header>
+							<section class="posts">
+
+								<article>
+									<header>
+										<h4>Start Dec, 2021</h4>
+										<h2>Thai-Nichi Institute of Technology<br />
+										University</h2>
+									</header>
+									<a class="image fit"><img src="images/TNI-Logo.png" alt="" /></a>
+									<p>Bachelor of INFORMATION TECHNOLOGY
 								</article>
 								<article>
 									<header>
